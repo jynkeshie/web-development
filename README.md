@@ -56,3 +56,9 @@ If you want your cells to be table header cells, use the <th> (table header) tag
 Table Borders are added using CSS border property on table, th, and td elements. border-collapse: collapse, prevents having double borders.
 If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border. With the border-radius property, the borders get rounded corners. you can also Skip the border around the table by leaving out table from the css selector.
 border-styles; dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden.
+
+ordered lists <ol>, use the HTML "type" attribute to define the numbering type. e.g, type="A" for uppercase letters. you can also use "start="50" to start from a specific number. 
+unordered lists <ul>, Use the HTML "list-style-type" attribute to define the numbering type. e.g, list-style-type:circle; (disc - for bullets by default, square,none).
+
+inline elements do not start on a new line.e.g, a, img, button, span - used to mark up a part of a text or a part of a document, cite, code, textarea,..
+block elements take full width available. e.g p, div, h1, table, address, article, aside,..
