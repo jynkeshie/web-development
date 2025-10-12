@@ -62,3 +62,44 @@ unordered lists <ul>, Use the HTML "list-style-type" attribute to define the num
 
 inline elements do not start on a new line.e.g, a, img, button, span - used to mark up a part of a text or a part of a document, cite, code, textarea,..
 block elements take full width available. e.g p, div, h1, table, address, article, aside,..
+
+It's best to use relative file paths
+
+The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.
+
+The metadata will not be displayed on the page, but is used by browsers (how to display content or reload page), by search engines (keywords), and other web services.
+
+Examples
+Define the character set used:
+
+<meta charset="UTF-8">
+Define keywords for search engines:
+
+<meta name="keywords" content="HTML, CSS, JavaScript">Define a description of your web page:
+
+<meta name="description" content="Free Web tutorials">
+Define the author of a page:
+
+<meta name="author" content="John Doe">
+Refresh document every 30 seconds:
+
+<meta http-equiv="refresh" content="30">
+Setting the viewport to make your website look good on all devices:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Setting The Viewport
+To create a responsive website, add the following <meta> tag to all your web pages:
+
+Example
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+HTML Entities - Reserved characters in HTML must be replaced with entities:
+< (less than) = &lt;
+> (greater than) = &gt;
+Entity names (&entity_name;) or entity numbers (&#entity_number;) can be used to display reserved HTML characters.
+To display a less than sign (<) we must write: &lt; or &#60;
+
+A non-breaking space is a space that will not break into a new line - (&nbsp;)
+
+UTF-8 Characters 
+The <meta charset="UTF-8"> element defines the character set. The characters A, B, and C, are displayed by the numbers 65, 66, and 67.
+To let the browser understand that you are displaying a character, you must start the entity number with &# and end it with ; (semicolon).
