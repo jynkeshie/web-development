@@ -103,3 +103,11 @@ A non-breaking space is a space that will not break into a new line - (&nbsp;)
 UTF-8 Characters 
 The <meta charset="UTF-8"> element defines the character set. The characters A, B, and C, are displayed by the numbers 65, 66, and 67.
 To let the browser understand that you are displaying a character, you must start the entity number with &# and end it with ; (semicolon).
+
+A URL/web address follows the following syntax; scheme://prefix.domain:port/path/filename
+scheme - defines the type of Internet service (most common is http or https)
+prefix - defines a domain prefix (default for http is www)
+domain - defines the Internet domain name (like w3schools.com)
+port - defines the port number at the host (default for http is 80)
+path - defines a path at the server (If omitted: the root directory of the site)
+filename - defines the name of a document or resource
