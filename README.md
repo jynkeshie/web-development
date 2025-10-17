@@ -111,3 +111,21 @@ domain - defines the Internet domain name (like w3schools.com)
 port - defines the port number at the host (default for http is 80)
 path - defines a path at the server (If omitted: the root directory of the site)
 filename - defines the name of a document or resource
+
+# input form attributes;
+Formaction - specifies the URL of the file that will process the input when the form is submitted. It overrides the action attribute of the <form> element, and works with submit and image input types.
+Formtarget - works with submit and image input types
+Formnovalidate - specifies that an <input> element should not be validated when submitted
+Formmethod - defines the HTTP method for sending form-data to the action URL. works with submit and image input types. The form-data can be sent as URL variables (method="get") or as an HTTP post transaction (method="post") 
+formenctype - specifies how the form-data should be encoded when submitted (only for forms with method="post") . It overrides the enctype attribute of the <form> element  & works with submit and image input types.
+
+the "get" method:
+This method appends the form-data to the URL in name/value pairs
+This method is useful for form submissions where a user want to bookmark the result
+There is a limit to how much data you can place in a URL (varies between browsers), therefore, you cannot be sure that all of the form-data will be correctly transferred
+Never use the "get" method to pass sensitive information! (password or other sensitive information will be visible in the browser's address bar)
+
+the "post" method:
+This method sends the form-data as an HTTP post transaction
+Form submissions with the "post" method cannot be bookmarked
+The "post" method is more robust and secure than "get", and "post" does not have size limitations
