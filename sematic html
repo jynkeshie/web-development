@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sematic HTML</title>
+</head>
+<body>
+    <p>
+       -Semantics are the meaning of words, or phrases, in a language. In HTML, which is a language, elements have their own semantic meaning too. In fact, you can think of your HTML document like you would a text document. And much like a text document, you might have headings, images, bold text, and other formatting.
+       semantic HTML improves SEO, accessibility, and developer experience. 
+       semantic HTML describes the content, while presentational HTML focuses on the appearance - includes center, big,font (outdated).
+       -The idiomatic text element, i, was originally used for presentational purposes to display the text in italics. But now, it is frequently used for highlighting alternative voice or mood, idiomatic terms from another language, technical terms, and thoughts. 
+       e.g. There is a certain <i lang="fr">je ne sais quoi</i> in the air. lang specifies langua
+       -Even if it looks the same when the text was inside the idiomatic text element, the semantic emphasis element conveys its meaning and importance behind the scenes.
+       It's important to know that these elements should not be used for presentational purposes only. If you need to display the text in italics, but the text doesn't have a special purpose, style, or meaning in the paragraph, you should use CSS instead.
+       -The "bring attention to" element, b, is commonly used to highlight keywords in summaries, or product names in reviews. Usually, browsers display this text in boldface.
+       If you need to emphasize the importance/urgency of the text, you should use the strong element instead of the b element.
+       -You should use block quotes for extended quotations from other sources and inline quotes for short quotations from other sources that should be part of existing paragraphs. The value of the cite attribute is the URL of the source.the purpose of the cite element in HTML is To mark up the title of a referenced creative work.
+       -The time element is used to represent a specific moment in time.
+       e.g. <p>The reservations are for <time datetime="20:00">20:00 </time></p>
+       Whenever you need to represent events, publication dates, or appointments, it is best to use the time element. -YYYY-MM-DDTHH:MM:SS
+       -The code element is meant to represent a single line of code. If you want to represent multiple lines of code, you will need to place a code element inside a preformatted text element.
+       -The unarticulated annotation element, or u element for short, is used to represent inline text that has non-textual annotation applied.
+
+Here is an example of using the u element to highlight various spelling errors:
+       <p>Here is an example of using the <u>u</u> element to highlight various spelling errors:</p>
+       <p>Ths sentnce has a few speling erors.</p>
+       <p>In this example, the u element is used to underline the misspelled words, making them stand out for correction. This can be particularly useful in educational contexts or when reviewing written content for errors.</p>
+       -If you want to style a piece of text with an underline, you should use CSS instead of HTML. The strikethrough element, or s element for short, should be used to represent when text is no longer accurate or relevant. 
+       -The ruby element represents small text shown above or below the main text. It is typically used to show the pronunciation of East Asian characters. Here is the ruby element example from the MDN web docs page:
+       <ruby> 明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp> </ruby>
+</body>
